@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Stack Implementation",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/stack.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Queue Implementation",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/queue.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Linked List",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/linked-list.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Doubly Linked List",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Doubly-linked-list.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: OOPS Banking System",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/OOPS",
+            "console": "integratedTerminal"
+        }
+    ]
+}
