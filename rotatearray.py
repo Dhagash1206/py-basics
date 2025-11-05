@@ -56,4 +56,3 @@ else:
     d = d % size
     print('Rotated array: ', left_rotate_array(arr, size, d))
 
-# This code contributed by SR.Dhanush
