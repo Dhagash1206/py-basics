@@ -1,4 +1,4 @@
-#py-basics
+# py-basics
 
 A collection of Python implementations covering core data structures, algorithms, search strategies, and coding practice problems
 
