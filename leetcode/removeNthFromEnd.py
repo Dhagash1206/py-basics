@@ -19,3 +19,24 @@ class Solution:
 
         p1.next = p1.next.next
         return head
+
+
+# another approach 
+
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        current = head
+        fix = head
+
+        for _ in range(n):
+            current = current.next
+
+        if not current:
+            return head.next
+
+        while current.next:
+            current = current.next
+            fix = fix.next
+
+        fix.next = fix.next.next
+        return head
