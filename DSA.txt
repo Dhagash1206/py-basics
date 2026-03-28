@@ -1,0 +1,43 @@
+- Arrays & Strings:
+  Two pointers, sliding window, prefix sum
+  Questions: subarray sum, longest substring, max sum window
+
+- Linked List:
+  Reverse, cycle detection (Floyd), merge lists
+  Questions: detect loop, middle node, reverse in k-group
+
+- Stack & Queue:
+  Monotonic stack, next greater element, LRU cache
+  Questions: valid parentheses, min stack
+
+- Recursion & Backtracking:
+  Subsets, permutations, combinations
+  Questions: N-Queens, sudoku solver
+
+- Searching & Sorting:
+  Binary search, merge sort, quick sort
+  Questions: search in rotated array
+
+- Hashing:
+  HashMap/Set, frequency count
+  Questions: two sum, anagrams
+
+- Trees:
+  DFS/BFS, traversals, BST, LCA
+  Questions: height, diameter, level order
+
+- Graphs:
+  BFS, DFS, Dijkstra, topological sort
+  Questions: shortest path, cycle detection
+
+- Dynamic Programming:
+  1D/2D DP, memoization
+  Questions: knapsack, LIS, edit distance
+
+- Greedy:
+  Interval scheduling, coin change
+  Questions: activity selection
+
+- Bit Manipulation:
+  XOR, bit masking
+  Questions: single number, subsets generation
