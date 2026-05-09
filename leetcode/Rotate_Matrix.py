@@ -7,13 +7,7 @@ Your task is to flip the submatrix by reversing the order of its rows vertically
 Return the updated matrix.'''
 
 class Solution:
-    def reverseSubmatrix(
-        self,
-        grid: List[List[int]],
-        x: int,
-        y: int,
-        k: int
-    ) -> List[List[int]]:
+    def reverseSubmatrix(self,grid: List[List[int]],x: int,y: int,k: int) -> List[List[int]]:
 
         # Starting and ending row of submatrix
         top_row = x
@@ -34,4 +28,3 @@ class Solution:
             bottom_row -= 1
 
         return grid
-        
