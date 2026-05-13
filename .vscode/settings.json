@@ -58,7 +58,9 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
+    "__pycache__": true,
+    ".vscode": true
   },
-  "hide-files.files": []
+  "hide-files.files": ["__pycache__", ".vscode"]
 }
