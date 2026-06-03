@@ -1,9 +1,9 @@
 class Solution:
     def allPossibleBST(self, start, end, memo):
-        res = []
+        result = []
         if start > end:
-            res.append(None)
-            return res
+            result.append(None)
+            return result
         if (start, end) in memo:
             return memo[(start, end)]
 
@@ -16,10 +16,10 @@ class Solution:
             for left in leftSubTrees:
                 for right in rightSubTrees:
                     root = TreeNode(i, left, right)
-                    res.append(root)
+                    result.append(root)
 
-        memo[(start, end)] = res
-        return res
+        memo[(start, end)] = result
+        return result
 
     def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
         memo = {}
