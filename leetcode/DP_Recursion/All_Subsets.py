@@ -1,26 +1,31 @@
 class Solution:
     def subsets(self, s: str):
 
-        ans = []
+        newS = []
+        temp = []
 
-        def func(i, subset):
-
+        def func(i, newS):
+            
             if i == len(s):
-                ans.append(subset)
+                temp.append(newS.copy())
                 return
-
-            func(i + 1, subset)
-
-            func(i + 1, subset + s[i])
-
-        func(0, "")
-        
-        ans = "\n".join(ans)
-
-        return ans
+            
+            
+            newS.append(s[i])
+            func(i+1,newS)
+            
+            
+            newS.pop()
+            func(i+1,newS)
+            
+            
+            return temp[]
+            
+        return func(0,newS)
+            
 
 
 
 obj = Solution()
-
-print(obj.subsets("abcde"))
+arr  = [1,2,3]
+print(obj.subsets(arr))
