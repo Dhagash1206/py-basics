@@ -30,6 +30,8 @@ class Solution:
 
                         root = TreeNode(0)
 
+                        
+
                         root.left = left_tree
                         root.right = right_tree
 
