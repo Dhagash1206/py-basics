@@ -28,10 +28,8 @@ class Solution:
                 for left_tree in left_trees:
                     for right_tree in right_trees:
 
-                        root = TreeNode(0)
-
+                        root = TreeNode(0)       
                         
-
                         root.left = left_tree
                         root.right = right_tree
 

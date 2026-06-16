@@ -1,0 +1,108 @@
+DSA
+
+1. ARRAYS & STRINGS
+
+- Core Techniques:
+  - Two pointers: move two indices toward/away from each other to reduce O(n^2) to O(n)
+  - Sliding window: maintain a dynamic sub-range to track sums/lengths efficiently
+  - Prefix sum: precompute cumulative sums for O(1) range sum queries
+- Practice Questions:
+  - Subarray sum equals K
+  - Longest substring without repeating characters
+  - Maximum sum subarray of size K
+
+2. LINKED LIST
+
+- Core Techniques:
+  - Reverse a linked list (iterative/recursive)
+  - Cycle detection using Floyd's slow-fast pointer algorithm
+  - Merge two sorted linked lists
+- Practice Questions:
+  - Detect loop in a linked list
+  - Find the middle node
+  - Reverse nodes in k-group
+
+3. STACK & QUEUE
+
+- Core Techniques:
+  - Monotonic stack for maintaining increasing/decreasing order
+  - Next greater element pattern
+  - LRU cache design using stack/queue + hashmap
+- Practice Questions:
+  - Valid parentheses
+  - Min stack (O(1) getMin)
+
+4. RECURSION & BACKTRACKING
+
+- Core Techniques:
+  - Generate subsets, permutations, and combinations
+  - Prune invalid branches early for efficiency
+- Practice Questions:
+  - N-Queens problem
+  - Sudoku solver
+
+5. SEARCHING & SORTING
+
+- Core Techniques:
+  - Binary search and its variations
+  - Merge sort (stable, O(n log n))
+  - Quick sort (in-place, average O(n log n))
+- Practice Questions:
+  - Search in a rotated sorted array
+
+6. HASHING
+
+- Core Techniques:
+  - HashMap/HashSet for O(1) lookups
+  - Frequency counting patterns
+- Practice Questions:
+  - Two sum
+  - Group/check anagrams
+
+7. TREES
+
+- Core Techniques:
+  - DFS (preorder, inorder, postorder) and BFS traversals
+  - Binary Search Tree (BST) operations
+  - Lowest Common Ancestor (LCA)
+- Practice Questions:
+  - Height of a tree
+  - Diameter of a tree
+  - Level order traversal
+
+8. GRAPHS
+
+- Core Techniques:
+  - BFS and DFS traversal
+  - Dijkstra's algorithm for shortest path
+  - Topological sort for DAGs
+- Practice Questions:
+  - Shortest path in a graph
+  - Cycle detection (directed/undirected)
+
+9. DYNAMIC PROGRAMMING
+
+- Core Techniques:
+  - 1D and 2D DP table construction
+  - Memoization (top-down) vs tabulation (bottom-up)
+- Practice Questions:
+  - 0/1 Knapsack
+  - Longest Increasing Subsequence (LIS)
+  - Edit distance
+
+10. GREEDY
+
+- Core Techniques:
+  - Interval scheduling for non-overlapping intervals
+  - Coin change (greedy variant)
+- Practice Questions:
+  - Activity selection problem
+
+11. BIT MANIPULATION
+
+- Core Techniques:
+  - XOR properties for finding unique elements
+  - Bit masking for subset representation
+- Practice Questions:
+  - Single number
+  - Generate subsets using bitmasks
