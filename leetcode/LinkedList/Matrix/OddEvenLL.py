@@ -7,7 +7,7 @@ class Solution:
         even_head = even
         
         while even and even.next:
-            odd.next = even.next
+            odd.next = even.nextf
             odd = odd.next
             even.next = even.next.next
             even = even.next
