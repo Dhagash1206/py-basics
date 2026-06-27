@@ -1,42 +1,24 @@
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        p1 = head
-        p2 = head
-        count = 1
 
-        if head.next == None and n == 1:
-            return None
 
-        while p2.next is not None:
-            p2 = p2.next
-            count = count + 1
+        count = 0
+        temp = head
+        while temp != None:
+            count +=1
+            temp = temp.next
 
-        if n == count:   # fix: head removal
+
+        n = count - n 
+
+        if n == 0:
             return head.next
 
-        for i in range(count - n - 1):
-            p1 = p1.next
+        temp = head
+        
+        for _ in range(n - 1):
+            temp = temp.next
 
-        p1.next = p1.next.next
-        return head
+        temp.next = temp.next.next
 
-
-# another approach 
-
-class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        current = head
-        fix = head
-
-        for _ in range(n):
-            current = current.next
-
-        if not current:
-            return head.next
-
-        while current.next:
-            current = current.next
-            fix = fix.next
-
-        fix.next = fix.next.next
         return head
