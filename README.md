@@ -132,21 +132,6 @@ python A_Search.py
 
 ---
 
-## 🛠️ Topics Covered
-
-- **Data Structures** — Linked Lists, Stacks, Queues, Hashmaps
-- **Search Algorithms** — A*, BFS, Greedy Best-First, Uniform Cost Search, Alpha-Beta Pruning
-- **Dynamic Programming** — Recursion & Tabulation (Fibonacci, LCS, Word Break, Integer Break, etc.)
-- **Divide & Conquer** — Karatsuba Multiplication
-- **Backtracking** — N-Queens, Permutations
-- **Graphs & Trees** — BST Iterator, Traversals, Unique Binary Trees
-- **OOP in Python** — Classes, Inheritance, Encapsulation, Abstraction, Polymorphism
-- **APIs & Backend** — FastAPI, Firebase Auth, SQLite CRUD, Weather API
-- **Machine Learning** — Basic Neural Networks, Tensors
-- **Problem Solving** — LeetCode-style challenges
-
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
