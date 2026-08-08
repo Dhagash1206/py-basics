@@ -1,33 +1,33 @@
 class Solution:
-    def merge(self, a, b):
+    def merge(self, list1, list2):
         dummy = ListNode(0)
-        temp = dummy
+        current = dummy
 
-        # Merge both lists
-        while a and b:
-            if a.val < b.val:
-                temp.next = a
-                a = a.next
+        # Merge both sorted lists
+        while list1 and list2:
+            if list1.val < list2.val:
+                current.next = list1
+                list1 = list1.next
             else:
-                temp.next = b
-                b = b.next
+                current.next = list2
+                list2 = list2.next
 
-            temp = temp.next
+            current = current.next
 
         # Add remaining nodes
-        if a:
-            temp.next = a
+        if list1:
+            current.next = list1
         else:
-            temp.next = b
+            current.next = list2
 
         return dummy.next
 
     def sortList(self, head):
-        # 0 or 1 node
+        # 0 or 1 node is already sorted
         if not head or not head.next:
             return head
 
-        # Find middle
+        # Find the middle
         slow = head
         fast = head.next
 
@@ -35,13 +35,13 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
 
-        # Split the list
-        second = slow.next
+        # Split into two lists
+        second_half = slow.next
         slow.next = None
 
         # Sort both halves
         left = self.sortList(head)
-        right = self.sortList(second)
+        right = self.sortList(second_half)
 
-        # Merge sorted halves
+        # Merge the sorted halves
         return self.merge(left, right)
